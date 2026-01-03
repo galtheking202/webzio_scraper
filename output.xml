@@ -1,0 +1,1227 @@
+<html dir="ltr" lang="en-gb" class="wf-opensans-n6-active wf-opensans-n4-active wf-opensans-n7-active wf-opensans-n3-active wf-opensans-n8-active wf-opensans-i3-active wf-opensans-i6-active wf-opensans-i7-active wf-opensans-i4-active wf-active"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-style-type" content="text/css">
+	<meta http-equiv="content-language" content="en-gb">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="resource-type" content="document">
+	<meta name="distribution" content="global">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="application-name" content="phpBB">
+	<meta name="msapplication-tooltip" content="phpBB • Free and Open Source Forum Software">
+	<meta name="msapplication-starturl" content="/">
+	<meta name="msapplication-window" content="width=1024;height=768">
+	<meta name="msapplication-task" content="name=Home; action-uri=/; icon-uri=favicon.ico">
+	<meta name="msapplication-task" content="name=Community; action-uri=/community/; icon-uri=favicon.ico">
+	<meta name="msapplication-task" content="name=Blog; action-uri=http://blog.phpbb.com/; icon-uri=favicon.ico">
+	<meta name="msapplication-task" content="name=Customise; action-uri=/customise/; icon-uri=favicon.ico">
+	<meta name="msapplication-task" content="name=Area51; action-uri=http://area51.phpbb.com/; icon-uri=favicon.ico">
+
+	
+	<title>phpBB • How to create Tags / Categories for different Topics</title>
+
+		<link rel="alternate" type="application/atom+xml" title="Feed - phpBB.com" href="/community/feed?sid=1feb2053b0cc84e32fbd8f95d3588a00">	<link rel="alternate" type="application/atom+xml" title="Feed - News" href="/community/feed?sid=1feb2053b0cc84e32fbd8f95d3588a00?mode=news">	
+		<link rel="alternate" type="application/atom+xml" title="Feed - phpBB.com" href="/community/feed?sid=1feb2053b0cc84e32fbd8f95d3588a00">	<link rel="alternate" type="application/atom+xml" title="Feed - News" href="/community/feed/news?sid=1feb2053b0cc84e32fbd8f95d3588a00">	<link rel="alternate" type="application/atom+xml" title="Feed - All forums" href="/community/feed/forums?sid=1feb2053b0cc84e32fbd8f95d3588a00">			<link rel="alternate" type="application/atom+xml" title="Feed - Forum - [3.0.x] Support Forum" href="/community/feed/forum/46?sid=1feb2053b0cc84e32fbd8f95d3588a00">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - How to create Tags / Categories for different Topics" href="/community/feed/topic/2159437?sid=1feb2053b0cc84e32fbd8f95d3588a00">		
+		<link rel="canonical" href="https://www.phpbb.com/community/viewtopic.php?t=2159437">
+	
+	<!--
+		phpBB style name: prosilver
+		Based on style:		prosilver (this is the default phpBB3 style)
+		Original author:	Tom Beddard ( http://www.subBlue.com/ )
+		Modified by:
+
+	-->
+
+		<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" async=""></script><script>
+		WebFontConfig = {
+			google: {
+				families: ['Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese']
+			}
+		};
+
+		(function(d) {
+			var wf = d.createElement('script'), s = d.scripts[0];
+			wf.src = 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js';
+			wf.async = true;
+			s.parentNode.insertBefore(wf, s);
+		})(document);
+	</script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/community/styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly">
+	<link href="/community/styles/prosilver/theme/stylesheet.css" rel="stylesheet" type="text/css" media="screen, projection">
+	<link href="./styles/prosilver/theme/responsive.css?assets_version=1206" rel="stylesheet" type="text/css" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+	<link href="/assets/css/index.css?assets_version=1206" rel="stylesheet" type="text/css" media="screen, projection">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+
+		
+	
+	
+		<link href="/assets/css/documentation.css?assets_version=1206" rel="stylesheet" type="text/css" media="screen, projection">	
+	
+	
+	
+		<link href="./assets/cookieconsent/cookieconsent.min.css?assets_version=1206" rel="stylesheet">
+	
+	<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=1206" rel="stylesheet">
+	<![endif]-->
+
+	
+	<link href="./ext/phpbb/collapsiblecategories/styles/all/theme/collapsiblecategories.css?assets_version=1206" rel="stylesheet" media="screen"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" media="all">
+
+
+	
+<style></style></head>
+<body id="phpbb" class="notouch community section-viewtopic ltr hasjs"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override--1687565279 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="./ucp.php?mode=privacy&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Got it!</a></div><!--googleon: all--></div>
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="phpbb-header">
+						<h1 id="logo-banner"><a href="/">phpBB • Free and Open Source Forum Software</a></h1>
+			<div id="top-social" class="top-social-home">
+				<div id="top-social-icons">
+					<a href="/feeds/rss/"><img src="/assets/images/icons/rss-20.png" alt="RSS"></a>
+					<a href="http://www.facebook.com/phpBB"><img src="/assets/images/icons/facebook-20.png" alt="Facebook"></a>
+					<a href="http://www.twitter.com/phpbb"><img src="/assets/images/icons/twitter-20.png" alt="Twitter"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="phpbb-navbar" class="phpbb-navbar">
+		<div class="nav-button but-menu"><a href="#" id="phpbb-menu-toggle" title="Show menu">Menu</a></div>
+		<div id="searchbox">
+			<!-- Google CSE Search Box Begins -->
+			<form method="get" action="/search/?sid=1feb2053b0cc84e32fbd8f95d3588a00">
+				<input name="q" id="q" type="search" size="40" value="">
+			</form>
+		</div>
+		<ul id="phpbb-menu" class="phpbb-menu">
+	<li class="nav-button but-about">
+		<a href="/about/?sid=1feb2053b0cc84e32fbd8f95d3588a00">About</a>
+				<div class="sub-menu">
+			<ul>
+				<li>
+					<h4><a href="/about/features/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Features</a></h4>
+					<p><a href="/about/features/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Learn about the features that phpBB has to offer.</a></p>
+				</li>
+				<li>
+					<h4><a href="/demo/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Demo</a></h4>
+					<p><a href="/demo/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Give phpBB a try with a fully-featured demo board.</a></p>
+				</li>
+				<li>
+					<h4><a href="/showcase/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Showcase</a></h4>
+					<p><a href="/showcase/?sid=1feb2053b0cc84e32fbd8f95d3588a00">A showcase of popular and unique sites using phpBB.</a></p>
+				</li>
+				<li class="last">
+					<h4><a href="/get-involved/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Get Involved</a></h4>
+					<p><a href="/get-involved/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Learn how you can get involved with the project.</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<h4><a href="/about/launch/">3.3 New Features</a></h4>
+					<p><a href="/about/launch/">An overview of the new features and improvements in phpBB 3.3.</a></p>
+				</li>
+				<li>
+					<h4><a href="/about/team/?sid=1feb2053b0cc84e32fbd8f95d3588a00">The Team</a></h4>
+					<p><a href="/about/team/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Find out who is responsible for all the mayhem.</a></p>
+				</li>
+				<li>
+					<h4><a href="/about/contact_us.php?sid=1feb2053b0cc84e32fbd8f95d3588a00">Contact Us</a></h4>
+					<p><a href="/about/contact_us.php?sid=1feb2053b0cc84e32fbd8f95d3588a00">Have a question the forums don't answer? Come here.</a></p>
+				</li>
+				<li class="last">
+					<h4><a href="/about/advertise/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Advertising</a></h4>
+					<p><a href="/about/advertise/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Information if you want to advertise on phpBB.com.</a></p>
+				</li>
+			</ul>
+			<div class="sub-menu-bottom"><a href="/about/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Find out more about the project »</a></div>
+		</div>
+			</li>
+
+	<li class="nav-button but-downloads">
+		<a href="/downloads/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Downloads</a>
+				<div class="sub-menu">
+			<ul>
+				<li>
+					<h4><a href="/downloads/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Latest Version</a></h4>
+					<p><a href="/downloads/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Download the latest stable release of phpBB</a></p>
+				</li>
+				<li>
+					<h4><a href="/downloads/?sid=1feb2053b0cc84e32fbd8f95d3588a00#update">Update Packages</a></h4>
+					<p><a href="/downloads/?sid=1feb2053b0cc84e32fbd8f95d3588a00#update">Automatic Update packages for your phpBB release</a></p>
+				</li>
+				<li class="last">
+					<h4><a href="/languages/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Language Packs</a></h4>
+					<p><a href="/languages/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Translate phpBB into (almost) any language you like</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<h4><a href="/customise/db/extensions-36?sid=1feb2053b0cc84e32fbd8f95d3588a00">Extensions</a></h4>
+					<p><a href="/customise/db/extensions-36?sid=1feb2053b0cc84e32fbd8f95d3588a00">Download extensions to enhance phpBB’s functionality</a></p>
+				</li>
+				<li>
+					<h4><a href="/customise/db/styles-2?sid=1feb2053b0cc84e32fbd8f95d3588a00">Styles</a></h4>
+					<p><a href="/customise/db/styles-2?sid=1feb2053b0cc84e32fbd8f95d3588a00">Your forums need a new look? Browse our Styles DB</a></p>
+				</li>
+				<li class="last">
+					<h4><a href="/customise/db/official_tools-23?sid=1feb2053b0cc84e32fbd8f95d3588a00">Official Tools</a></h4>
+					<p><a href="/customise/db/official_tools-23?sid=1feb2053b0cc84e32fbd8f95d3588a00">Official tools by the phpBB team to assist you with your board</a></p>
+				</li>
+			</ul>
+		</div>
+			</li>
+
+	<li class="nav-button but-customise">
+		<a href="/customise/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Customise</a>
+				<div class="sub-menu">
+			<ul class="wide-list">
+				<li>
+					<h4><a href="/customise/db/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Customisation Database</a></h4>
+					<img style="float:right;" src="/assets/images/images/customisation-db-icon.png" alt="Customisation Database">
+					<p><a href="/customise/db/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Our customisation database contains just about everything you might need to customise your phpBB board to your liking. In it you will find Extensions, MODs (for 3.0.x), Styles, Language Packs, BBCodes, as well as various tools.</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<h4><a href="/extensions/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Extensions</a></h4>
+					<p><a href="/extensions/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Guides on how to use them and how to create your own.</a></p>
+				</li>
+				<li class="last">
+					<h4><a href="/customise/db/extensions-36?sid=1feb2053b0cc84e32fbd8f95d3588a00">Extensions DB</a></h4>
+					<p><a href="/customise/db/extensions-36?sid=1feb2053b0cc84e32fbd8f95d3588a00">Download or submit extensions to our extensions database.</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<h4><a href="/styles/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Styles</a></h4>
+					<p><a href="/styles/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Guides on how to use them and to create your own styles.</a></p>
+				</li>
+				<li>
+					<h4><a href="/customise/db/styles-2?sid=1feb2053b0cc84e32fbd8f95d3588a00">Styles DB</a></h4>
+					<p><a href="/customise/db/styles-2?sid=1feb2053b0cc84e32fbd8f95d3588a00">Download or submit styles to our styles database.</a></p>
+				</li>
+			</ul>
+			<div class="sub-menu-bottom"><a href="">More resources on customising your board »</a></div>
+		</div>
+			</li>
+
+	<li class="nav-button but-support">
+		<a href="/support/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Support</a>
+				<div class="sub-menu">
+			<ul>
+				<li>
+					<h4><a href="/support/docs/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Documentation</a></h4>
+					<p><a href="/support/docs/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Installation guide and the complete documentation.</a></p>
+				</li>
+				<li class="last">
+				<h4><a href="/support/docs/en/3.3/kb/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Knowledge Base</a></h4>
+				<p><a href="/support/docs/en/3.3/kb/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Team and user submitted ar­ticles covering support areas.</a></p>
+				</li>
+							</ul>
+			<ul>
+				<li>
+					<h4><a href="/support/forums/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Support Forums</a></h4>
+					<p><a href="/support/forums/?sid=1feb2053b0cc84e32fbd8f95d3588a00">The Support related areas in our community forums.</a></p>
+				</li>
+				<li>
+					<h4><a href="/support/chat?sid=1feb2053b0cc84e32fbd8f95d3588a00">Discord / IRC</a></h4>
+					<p><a href="/support/chat?sid=1feb2053b0cc84e32fbd8f95d3588a00">Visit our Discord or IRC support channels.</a></p>
+				</li>
+				<li class="last">
+					<h4><a href="/support/intl/?sid=1feb2053b0cc84e32fbd8f95d3588a00">International Support</a></h4>
+					<p><a href="/support/intl/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Find a 3rd party support site in your first language.</a></p>
+				</li>
+			</ul>
+			<div class="sub-menu-bottom"><a href="/support/?sid=1feb2053b0cc84e32fbd8f95d3588a00">More information on support »</a></div>
+		</div>
+			</li>
+
+	<li class="nav-button but-development">
+		<a href="/development/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Development</a>
+				<div class="sub-menu wide-menu">
+			<ul class="wide-list">
+				<li class="external wide-menu-item" title="Opens an external link.">
+					<h4><a href="//area51.phpbb.com/">Area51 phpBB Development</a></h4>
+					<img style="float:right;" src="/assets/images/images/area51/alien32.png?2014300900" alt="Area51 Alien">
+					<p><a href="//area51.phpbb.com/">All Development Discussion takes place at Area51. Bug tracker, development wiki, continuous integration and other development tools are located here. Find out how to get involved in phpBB development.</a></p>
+				</li>
+			</ul>
+			<ul class="narrow-list">
+				<li class="external" title="Opens an external link.">
+					<h4><a href="http://tracker.phpbb.com/">phpBB Bug Tracker</a></h4>
+					<p><a href="http://tracker.phpbb.com/">Report problems with phpBB core and other sub-projects such as the Website, Customisation DB, and Team Tools here.</a></p>
+				</li>
+				<li class="last">
+					<h4><a href="/community/ideas/?sid=1feb2053b0cc84e32fbd8f95d3588a00">phpBB Ideas</a></h4>
+					<p><a href="/community/ideas/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Suggest, vote on and comment on ideas for phpBB.</a></p>
+				</li>
+			</ul>
+			<ul class="narrow-list">
+				<li>
+					<h4><a href="https://tracker.phpbb.com/secure/BrowseProjects.jspa#10020">Security Tracker</a></h4>
+					<p><a href="https://tracker.phpbb.com/secure/BrowseProjects.jspa#10020">The tracker for security issues in phpBB or validated MODs.</a></p>
+				</li>
+				<li class="external last" title="Opens an external link.">
+					<h4><a href="">Development Wiki</a></h4>
+					<p><a href="">Share experience and learn more about the codebase.</a></p>
+				</li>
+			</ul>
+			<ul class="narrow-list">
+				<li>
+					<h4><a href="/development/gsoc/?sid=1feb2053b0cc84e32fbd8f95d3588a00">GSoC</a></h4>
+					<p><a href="/development/gsoc/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Google Summer of Code is an annual program in which Google awards stipends to students participating in coding projects for free and open source software projects.</a></p>
+				</li>
+			</ul>
+			<div class="sub-menu-bottom"><a href="/development/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Participate in phpBB development now »</a></div>
+		</div>
+			</li>
+
+	<li class="nav-button but-blog"><a href="//blog.phpbb.com/">Blog</a></li>
+
+	<li class="nav-button but-community">
+		<a href="/community/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Community</a>
+				<div class="sub-menu">
+			<ul>
+				<li>
+					<h4><a href="/community/viewforum.php?f=551&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">Support Forums</a></h4>
+					<p><a href="/community/viewforum.php?f=551&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">Help with installation &amp; running phpBB – search first!</a></p>
+				</li>
+				<li>
+					<h4><a href="/community/viewforum.php?f=451&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">Extensions Forums</a></h4>
+					<p><a href="/community/viewforum.php?f=451&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">Discuss and view Extensions that are available for download.</a></p>
+				</li>
+				<li class="last">
+					<h4><a href="/community/viewforum.php?f=471&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">Styles Forums</a></h4>
+					<p><a href="/community/viewforum.php?f=471&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">Discuss and view Styles that are available for download.</a></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<h4><a href="/community/viewforum.php?f=64&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">phpBB Discussion</a></h4>
+					<p><a href="/community/viewforum.php?f=64&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">Discussions on all things phpBB: features, future, etc.</a></p>
+				</li>
+				<li>
+					<h4><a href="/community/viewforum.php?f=6&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">General Discussion</a></h4>
+					<p><a href="/community/viewforum.php?f=6&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">General discussion and intelligent conversations.</a></p>
+				</li>
+				<li class="external last" title="Opens an external link.">
+					<h4><a href="//area51.phpbb.com/phpBB/">Area51</a></h4>
+					<p><a href="//area51.phpbb.com/phpBB/">Bleeding edge testing and development discussion.</a></p>
+				</li>
+							</ul>
+			<div class="sub-menu-bottom"><a href="/community/?sid=1feb2053b0cc84e32fbd8f95d3588a00">… and many more forums »</a></div>
+		</div>
+			</li>
+
+	<li class="nav-button but-hosting">
+		<a href="/hosting/?sid=1feb2053b0cc84e32fbd8f95d3588a00">Hosting</a>
+	</li>
+</ul>
+	</div>
+
+	<div id="page-body">
+
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger dropdown-toggle">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="./search.php?search_id=unanswered&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="./search.php?search_id=active_topics&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="./search.php?sid=1feb2053b0cc84e32fbd8f95d3588a00" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/community/help/faq?sid=1feb2053b0cc84e32fbd8f95d3588a00" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside" data-skip-responsive="true">
+			<a href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Fp%3D13166053&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="./ucp.php?mode=register&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList" style="max-width: 1125px;">
+
+			
+							<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope=""><a itemprop="item" href="./index.php?sid=1feb2053b0cc84e32fbd8f95d3588a00" accesskey="h" data-navbar-reference="index" title="Board index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1"></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="48"><a itemprop="item" href="./viewforum.php?f=48&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="phpBB Archives"><span itemprop="name">phpBB Archives</span></a><meta itemprop="position" content="2"></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="49"><a itemprop="item" href="./viewforum.php?f=49&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="phpBB 3.0.x Forums Archive"><span itemprop="name">phpBB 3.0.x Forums Archive</span></a><meta itemprop="position" content="3"></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="46"><a itemprop="item" href="./viewforum.php?f=46&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="[3.0.x] Support Forum"><span itemprop="name">[3.0.x] Support Forum</span></a><meta itemprop="position" content="4"></span>
+							
+					</li>
+
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php?sid=1feb2053b0cc84e32fbd8f95d3588a00" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+		
+		<a id="start_here" class="anchor"></a>
+		
+				
+<div class="phpbb-ads"><h2 class="topic-title"><a href="./viewtopic.php?t=2159437&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">How to create Tags / Categories for different Topics</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+<div style="display: none !important;">Get help with installation and running phpBB 3.0.x here. Please do <strong class="text-strong">not</strong> post bug reports, feature requests, or MOD-related questions here.<br></div>
+
+<a href="/support/spam/?from=upper_ad&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="phpbb-ads-ad"><img src="./styles/prosilver/theme/ads/upper_spam.png" alt="Anti-Spam Guide"></a>
+	<div class="rules">
+		<div class="inner">
+
+					<strong>Forum rules</strong><br>
+			<strong class="text-strong">END OF SUPPORT:</strong> 1 January 2017 (<a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=2373956" class="postlink">announcement</a>)
+		
+		</div>
+	</div>
+
+</div><!-- /.phpbb-ads -->
+
+<div class="action-bar bar-top">
+	
+			<a href="./posting.php?mode=reply&amp;t=2159437&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="button" title="This topic is locked, you cannot edit posts or make further replies.">
+							<span>Locked</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select dropdown-toggle">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?t=2159437&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php?sid=1feb2053b0cc84e32fbd8f95d3588a00">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="./search.php?sid=1feb2053b0cc84e32fbd8f95d3588a00" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+				<input type="hidden" name="t" value="2159437">
+<input type="hidden" name="sf" value="msgonly">
+<input type="hidden" name="sid" value="1feb2053b0cc84e32fbd8f95d3588a00">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			5 posts
+							• Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p13166053" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile13166053">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1342673&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="username">wbxpress</a>							</dt>
+
+						<dd class="profile-rank rank-img">Registered User</dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1342673&amp;sr=posts&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">150</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Mar 21, 2012 1:29 pm</dd>		
+		
+																			
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger dropdown-toggle" title="Contact wbxpress">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact wbxpress</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="http://askwb.com/" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content13166053">
+
+					<h3 class="first">
+						<a href="./viewtopic.php?p=13166053&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166053">How to create Tags / Categories for different Topics</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=13166053&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														<li class="responsive-menu hidden dropdown-container"><a href="javascript:void(0);" class="js-responsive-menu-link responsive-menu-link dropdown-toggle"><i class="icon fa-bars fa-fw" aria-hidden="true"></i></a><div class="dropdown"><div class="pointer"><div class="pointer-inner"></div></div><ul class="dropdown-contents"></ul></div></li></ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=13166053&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166053" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1342673&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="username">wbxpress</a></strong> » </span><time datetime="2012-07-19T06:29:37+00:00">Thu Jul 19, 2012 6:29 am</time>
+			</p>
+			
+			
+			
+			
+			<div class="content">I like to display a horizontal list of tags / categories assigned to different Topics. On click this, users can view only Topic titles. Is it possible?</div>
+
+			
+			
+									
+						
+							<div id="sig13166053" class="signature"><a href="http://www.askwb.com/" class="postlink">http://www.askwb.com/</a></div>			
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p13166055" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile13166055">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=719195&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="avatar"><img class="avatar" src="./download/file.php?avatar=719195_1723725688.png" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=719195&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" style="color: #CC6600;" class="username-coloured">Mick</a>							</dt>
+
+						<dd class="profile-rank rank-img">Support Team Member<br><img src="./images/ranks/team/SUPPORT-TEAM.png" alt="Support Team Member" title="Support Team Member"></dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=719195&amp;sr=posts&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">26947</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Aug 29, 2008 9:49 am</dd>		
+		
+																			
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger dropdown-toggle" title="Contact Mick">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact Mick</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="https://uniteuk.createaforum.com/index.php" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content13166055">
+
+					<h3>
+						<a href="./viewtopic.php?p=13166055&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166055">Re: How to create Tags / Categories for different Topics</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=13166055&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														<li class="responsive-menu hidden dropdown-container"><a href="javascript:void(0);" class="js-responsive-menu-link responsive-menu-link dropdown-toggle"><i class="icon fa-bars fa-fw" aria-hidden="true"></i></a><div class="dropdown"><div class="pointer"><div class="pointer-inner"></div></div><ul class="dropdown-contents"></ul></div></li></ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=13166055&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166055" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=719195&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" style="color: #CC6600;" class="username-coloured">Mick</a></strong> » </span><time datetime="2012-07-19T06:48:08+00:00">Thu Jul 19, 2012 6:48 am</time>
+			</p>
+			
+			
+			
+			
+			<div class="content">Not sure what you mean, can you explain a bit more please?</div>
+
+			
+			
+									
+						
+							<div id="sig13166055" class="signature"><ul><li><span style="font-size:100%;line-height:116%"><em class="text-italics">"The more connected we get the more alone we become” </em> - <span style="font-size:80%;line-height:116%">Kyle Broflovski©</span> <img alt="🇬🇧" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f1ec-1f1e7.svg"></span></li></ul></div>			
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p13166061" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile13166061">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1342673&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="username">wbxpress</a>							</dt>
+
+						<dd class="profile-rank rank-img">Registered User</dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1342673&amp;sr=posts&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">150</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Mar 21, 2012 1:29 pm</dd>		
+		
+																			
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger dropdown-toggle" title="Contact wbxpress">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact wbxpress</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="http://askwb.com/" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content13166061">
+
+					<h3>
+						<a href="./viewtopic.php?p=13166061&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166061">Re: How to create Tags / Categories for different Topics</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=13166061&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														<li class="responsive-menu hidden dropdown-container"><a href="javascript:void(0);" class="js-responsive-menu-link responsive-menu-link dropdown-toggle"><i class="icon fa-bars fa-fw" aria-hidden="true"></i></a><div class="dropdown"><div class="pointer"><div class="pointer-inner"></div></div><ul class="dropdown-contents"></ul></div></li></ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=13166061&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166061" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1342673&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="username">wbxpress</a></strong> » </span><time datetime="2012-07-19T07:01:47+00:00">Thu Jul 19, 2012 7:01 am</time>
+			</p>
+			
+			
+			
+			
+			<div class="content">Just like categories in Wordpress blog.<br>
+<br>
+Board<br>
+--Forum<br>
+----Topic 1 about Cat<br>
+----Topic 2 about Rat<br>
+----Topic 3 about Cat<br>
+----Topic 4 about Rat<br>
+----Topic 5 about Tiger<br>
+<br>
+Few buttons near footer: CAT, RAT, TIGER<br>
+<br>
+Users when click 'RAT' then he /she may view:<br>
+<br>
+Board<br>
+--Forum<br>
+----Topic 2 about Rat<br>
+----Topic 4 about Rat</div>
+
+			
+			
+									
+						
+							<div id="sig13166061" class="signature"><a href="http://www.askwb.com/" class="postlink">http://www.askwb.com/</a></div>			
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p13166185" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile13166185">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1342673&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="username">wbxpress</a>							</dt>
+
+						<dd class="profile-rank rank-img">Registered User</dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=1342673&amp;sr=posts&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">150</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Mar 21, 2012 1:29 pm</dd>		
+		
+																			
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger dropdown-toggle" title="Contact wbxpress">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact wbxpress</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="http://askwb.com/" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content13166185">
+
+					<h3>
+						<a href="./viewtopic.php?p=13166185&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166185">Re: How to create Tags / Categories for different Topics</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=13166185&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														<li class="responsive-menu hidden dropdown-container"><a href="javascript:void(0);" class="js-responsive-menu-link responsive-menu-link dropdown-toggle"><i class="icon fa-bars fa-fw" aria-hidden="true"></i></a><div class="dropdown"><div class="pointer"><div class="pointer-inner"></div></div><ul class="dropdown-contents"></ul></div></li></ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=13166185&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166185" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1342673&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="username">wbxpress</a></strong> » </span><time datetime="2012-07-19T13:47:49+00:00">Thu Jul 19, 2012 1:47 pm</time>
+			</p>
+			
+			
+			
+			
+			<div class="content">Can anyone help me please. <img class="smilies" src="./images/smilies/icon_redface.gif" width="15" height="17" alt=":oops:" title="Embarrassed"></div>
+
+			
+			
+									
+						
+							<div id="sig13166185" class="signature"><a href="http://www.askwb.com/" class="postlink">http://www.askwb.com/</a></div>			
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p13166195" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile13166195">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=182473&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="avatar"><img class="avatar" src="./download/file.php?avatar=182473_1546067496.gif" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=182473&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="username">Lumpy Burgertushie</a>							</dt>
+
+						<dd class="profile-rank rank-img">Registered User</dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=182473&amp;sr=posts&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">69228</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon May 02, 2005 3:11 am</dd>		
+		
+																			
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger dropdown-toggle" title="Contact Lumpy Burgertushie">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact Lumpy Burgertushie</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="https://youtube.com/user/lumpyb123" title="YouTube" class="last-cell">
+										<span class="contact-icon phpbb_youtube-icon">YouTube</span>									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content13166195">
+
+					<h3>
+						<a href="./viewtopic.php?p=13166195&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166195">Re: How to create Tags / Categories for different Topics</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=13166195&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														<li class="responsive-menu hidden dropdown-container"><a href="javascript:void(0);" class="js-responsive-menu-link responsive-menu-link dropdown-toggle"><i class="icon fa-bars fa-fw" aria-hidden="true"></i></a><div class="dropdown"><div class="pointer"><div class="pointer-inner"></div></div><ul class="dropdown-contents"></ul></div></li></ul>
+							
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=13166195&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00#p13166195" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=182473&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="username">Lumpy Burgertushie</a></strong> » </span><time datetime="2012-07-19T14:09:06+00:00">Thu Jul 19, 2012 2:09 pm</time>
+			</p>
+			
+			
+			
+			
+			<div class="content"><blockquote><div><cite>wbxpress wrote:</cite>Can anyone help me please. <img class="smilies" src="./images/smilies/icon_redface.gif" width="15" height="17" alt=":oops:" title="Embarrassed"></div></blockquote>
+this is not something that phpbb does. it does not have "tags"  like a blog does.<br>
+<br>
+you would have to try to find someone to write up a MOD for something like this.<br>
+<br>
+try the MOD release forum and/or the MOD request forum here.<br>
+<br>
+robert</div>
+
+			
+			
+									
+						
+							<div id="sig13166195" class="signature"><a href="https://1.envato.market/XxWaPG" class="postlink">Premium phpBB 3.3 Styles</a> by PlanetStyles.net<br>
+<br>
+I am pleased to announce that I have completed the first item on my bucket list. I have the bucket.</div>			
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="./posting.php?mode=reply&amp;t=2159437&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="button" title="This topic is locked, you cannot edit posts or make further replies.">
+							<span>Locked</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select dropdown-toggle">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?t=2159437&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?t=2159437&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select dropdown-toggle">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed">
+				<input type="submit" class="button2" name="sort" value="Go">
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			5 posts
+							• Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="./viewforum.php?f=46&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “[3.0.x] Support Forum”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select dropdown-toggle">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=47&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-cat-link"> <span> General</span></a></li>
+																<li><a href="./viewforum.php?f=14&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Announcements</span></a></li>
+																<li><a href="./viewforum.php?f=416&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Area 51 Development Board</span></a></li>
+																<li><a href="./viewforum.php?f=551&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-cat-link"> <span> Support Forums</span></a></li>
+																<li><a href="./viewforum.php?f=661&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; [3.3.x] Support Forum</span></a></li>
+																<li><a href="./viewforum.php?f=666&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.3.x] Convertors</span></a></li>
+																<li><a href="./viewforum.php?f=671&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.3.x] Translations</span></a></li>
+																<li><a href="./viewforum.php?f=438&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Custom BBCode Development and Requests</span></a></li>
+																<li><a href="./viewforum.php?f=439&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Validated BBCodes</span></a></li>
+																<li><a href="./viewforum.php?f=709&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-cat-link"> <span> Development forums</span></a></li>
+																<li><a href="./viewforum.php?f=712&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; [4.0.x] Feedback and support</span></a></li>
+																<li><a href="./viewforum.php?f=451&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-cat-link"> <span> Extensions Forums</span></a></li>
+																<li><a href="./viewforum.php?f=611&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Extensions Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=541&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Validated Extensions Support Topics</span></a></li>
+																<li><a href="./viewforum.php?f=676&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.3.x] Extensions Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=496&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Extension Requests</span></a></li>
+																<li><a href="./viewforum.php?f=456&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Extensions in Development</span></a></li>
+																<li><a href="./viewforum.php?f=501&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Abandoned Extensions</span></a></li>
+																<li><a href="./viewforum.php?f=461&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Extension Writers Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=471&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-cat-link"> <span> Styles Forums</span></a></li>
+																<li><a href="./viewforum.php?f=576&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Styles Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=681&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.3.x] Styles Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=586&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Styles Support &amp; Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=631&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Validated Styles Support Topics</span></a></li>
+																<li><a href="./viewforum.php?f=686&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.3.x] Styles Support &amp; Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=80&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Styles in Development</span></a></li>
+																<li><a href="./viewforum.php?f=691&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.3.x] Styles in Development</span></a></li>
+																<li><a href="./viewforum.php?f=696&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.3.x] Abandoned Styles</span></a></li>
+																<li><a href="./viewforum.php?f=52&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-cat-link"> <span> Non-support Specific</span></a></li>
+																<li><a href="./viewforum.php?f=64&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; phpBB Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=641&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; phpBB Custom Coding</span></a></li>
+																<li><a href="./viewforum.php?f=436&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; phpBB Ideas</span></a></li>
+																<li><a href="./viewforum.php?f=6&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; General Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=656&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Wanted!</span></a></li>
+																<li><a href="./viewforum.php?f=26&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; Test Me</span></a></li>
+																<li><a href="./viewforum.php?f=48&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-cat-link"> <span> phpBB Archives</span></a></li>
+																<li><a href="./viewforum.php?f=703&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; phpBB 3.2.x Forums Archive</span></a></li>
+																<li><a href="./viewforum.php?f=556&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.2.x] Support Forum</span></a></li>
+																<li><a href="./viewforum.php?f=561&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.2.x] Convertors</span></a></li>
+																<li><a href="./viewforum.php?f=566&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.2.x] Translations</span></a></li>
+																<li><a href="./viewforum.php?f=581&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.2.x] Styles Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=591&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.2.x] Styles Support &amp; Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=596&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.2.x] Styles in Development</span></a></li>
+																<li><a href="./viewforum.php?f=606&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.2.x] Abandoned Styles</span></a></li>
+																<li><a href="./viewforum.php?f=616&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.2.x] Extensions Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=651&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; phpBB 3.1.x Forums Archive</span></a></li>
+																<li><a href="./viewforum.php?f=466&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.1.x] Support Forum</span></a></li>
+																<li><a href="./viewforum.php?f=486&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.1.x] Convertors</span></a></li>
+																<li><a href="./viewforum.php?f=491&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.1.x] Translations</span></a></li>
+																<li><a href="./viewforum.php?f=531&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.1.x] Styles Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=481&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.1.x] Styles Support &amp; Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=476&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.1.x] Styles in Development</span></a></li>
+																<li><a href="./viewforum.php?f=601&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.1.x] Abandoned Styles</span></a></li>
+																<li><a href="./viewforum.php?f=536&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.1.x] Extensions Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=49&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; phpBB 3.0.x Forums Archive</span></a></li>
+																<li><a href="./viewforum.php?f=81&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; 3.0.x Modifications Forums</span></a></li>
+																<li><a href="./viewforum.php?f=69&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] MOD Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=423&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Validated MODs Support Topics</span></a></li>
+																<li><a href="./viewforum.php?f=72&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] MOD Requests</span></a></li>
+																<li><a href="./viewforum.php?f=70&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] MODs in Development</span></a></li>
+																<li><a href="./viewforum.php?f=434&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] Abandoned MODs</span></a></li>
+																<li><a href="./viewforum.php?f=71&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] MOD Writers Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=225&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] AutoMOD</span></a></li>
+																<li><a href="./viewforum.php?f=46&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] Support Forum</span></a></li>
+																<li><a href="./viewforum.php?f=65&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] Convertors</span></a></li>
+																<li><a href="./viewforum.php?f=427&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Convertors Database</span></a></li>
+																<li><a href="./viewforum.php?f=428&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Convertors Database Support</span></a></li>
+																<li><a href="./viewforum.php?f=66&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] Translations</span></a></li>
+																<li><a href="./viewforum.php?f=429&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Translations Database</span></a></li>
+																<li><a href="./viewforum.php?f=430&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; Translations Database Support</span></a></li>
+																<li><a href="./viewforum.php?f=185&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] Styles in Development</span></a></li>
+																<li><a href="./viewforum.php?f=435&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] Abandoned Styles</span></a></li>
+																<li><a href="./viewforum.php?f=74&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] Styles Support &amp; Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=73&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [3.0.x] Styles Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=285&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span> <span>↳ &nbsp; phpBB2 Forums Archive</span></a></li>
+																<li><a href="./viewforum.php?f=295&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; 2.0.x Support &amp; Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=1&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; 2.0.x Support Forum</span></a></li>
+																<li><a href="./viewforum.php?f=10&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] Convertors</span></a></li>
+																<li><a href="./viewforum.php?f=50&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] Translations</span></a></li>
+																<li><a href="./viewforum.php?f=18&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; 2.0.x Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=78&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; 2.0.x Modifications Forums</span></a></li>
+																<li><a href="./viewforum.php?f=15&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] MOD Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=94&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] MOD Database Cleanup</span></a></li>
+																<li><a href="./viewforum.php?f=17&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] MOD Requests</span></a></li>
+																<li><a href="./viewforum.php?f=16&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] MODs in Development</span></a></li>
+																<li><a href="./viewforum.php?f=35&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] MOD Writers Discussion</span></a></li>
+																<li><a href="./viewforum.php?f=77&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; 2.0.x Styles Forums</span></a></li>
+																<li><a href="./viewforum.php?f=22&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] Styles Database Releases</span></a></li>
+																<li><a href="./viewforum.php?f=23&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>↳ &nbsp; [2.0.x] Styles Development &amp; Discussion</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+
+
+</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php?sid=1feb2053b0cc84e32fbd8f95d3588a00" data-navbar-reference="index" title="Board index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="responsive-menu hidden rightside dropdown-container"><a href="javascript:void(0);" class="js-responsive-menu-link responsive-menu-link dropdown-toggle"><i class="icon fa-bars fa-fw" aria-hidden="true"></i></a><div class="dropdown"><div class="pointer"><div class="pointer-inner"></div></div><ul class="dropdown-contents"></ul></div></li><li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="/community/user/delete_cookies?sid=1feb2053b0cc84e32fbd8f95d3588a00" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="./memberlist.php?mode=contactadmin&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+		<h3 style="padding-top: 8px;">advertisements</h3>
+<div id="footer_banner_leaderboard">
+	<a class="ads-button-hosting" href="https://www.phpbb.com/hosting/">Need Hosting?</a>
+</div>
+			<p class="lynkorama">
+			<strong><a href="https://www.phpbb.com/hosting/r/bluehost-footer/" class="text-links-favicon" style="background-image: url(/assets/images/images/favicons/bluehost.png);">&nbsp;BlueHost.com</a></strong> •
+
+			<a href="http://www.webhosting.uk.com/">Web Hosting UK</a> •
+			<a href="http://www.hostmonster.com/track/phpbbsoftwareltd/footer">HostMonster</a> •
+			<a href="http://hosting.fastdomain.com/track/phpbbsoftwareltd/footer">FastDomain Hosting</a> •
+			<a href="/about/advertise/?sid=1feb2053b0cc84e32fbd8f95d3588a00"><em>Advertise on phpBB.com</em></a>
+		</p>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">© 2000, 2002, 2003, 2007 <a href="/about/?sid=1feb2053b0cc84e32fbd8f95d3588a00">phpBB Limited</a></span>
+		</p>
+				
+		<p class="footer-row" role="menu">
+			<a class="footer-link" href="./ucp.php?mode=privacy&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="./ucp.php?mode=terms&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+			|
+			<a class="footer-link" href="/about/contact_us.php?sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Contact Us" role="menuitem">
+				<span class="footer-link-text">Contact Us</span>
+			</a>
+			|
+			<a class="footer-link" href="/about/advertise/?sid=1feb2053b0cc84e32fbd8f95d3588a00" title="Advertise on www.phpbb.com" role="menuitem">
+				<span class="footer-link-text">Advertise on www.phpbb.com</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('\x3Cscript src="./assets/javascript/jquery-3.7.1.min.js?assets_version=1206">\x3C/script>');</script><script src="./assets/javascript/core.js?assets_version=1206"></script>
+<script>
+    (function($){
+        var $fa_cdn = $('head').find('link[rel="stylesheet"]').first(),
+            $span = $('<span class="fa" style="display:none"></span>').appendTo('body');
+        if ($span.css('fontFamily') !== 'FontAwesome' ) {
+            $fa_cdn.after('<link href="./assets/css/font-awesome.min.css" rel="stylesheet">');
+            $fa_cdn.remove();
+        }
+        $span.remove();
+    })(jQuery);
+</script>
+<script src="./assets/cookieconsent/cookieconsent.min.js?assets_version=1206"></script>
+<script>
+    if (typeof window.cookieconsent === "object") {
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#0F538A"
+                    },
+                    "button": {
+                        "background": "#E5E5E5"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "This\u0020website\u0020uses\u0020cookies\u0020to\u0020ensure\u0020you\u0020get\u0020the\u0020best\u0020experience\u0020on\u0020our\u0020website.",
+                    "dismiss": "Got\u0020it\u0021",
+                    "link": "Learn\u0020more",
+                    "href": "./ucp.php?mode=privacy&amp;sid=1feb2053b0cc84e32fbd8f95d3588a00"
+                }
+            });
+        });
+    }
+</script>
+
+
+<script src="/assets/js/jquery.hoverIntent.minified.js"></script>
+<script src="/assets/js/scripts.js"></script>
+<script src="./ext/phpbb/collapsiblecategories/styles/all/template/js/collapsiblecategories.js?assets_version=1206"></script>
+<script src="./styles/prosilver/template/forum_fn.js?assets_version=1206"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=1206"></script>
+
+
+
+<script>(function(a){if(a.getElementsByTagName("pre").length){var c=a.getElementsByTagName("head")[0],b=a.createElement("script");a=a.createElement("link");b.type="text/javascript";b.onload=function(){hljs.initHighlighting()};b.async=!0;b.src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js";c.appendChild(b);a.type="text/css";a.rel="stylesheet";a.href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css";c.appendChild(a)}})(document)</script>
+<script type="text/javascript">
+    // <![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-93879-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    // ]]>
+</script>
+
+
+
+
+</body></html>
