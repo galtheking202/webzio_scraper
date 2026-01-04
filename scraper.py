@@ -1,17 +1,11 @@
 import re
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from utils import * 
-
-def fetch_page(url):
-    driver = webdriver.Chrome()
-    driver.get(url)
-    html = driver.page_source
-    driver.quit()
-    return html
 
 
 def extract_posts_bulletin(html):
+    """
+    this function will parse https://forum.vbulletin.com
+    """
     authors = extract_by_class_or_id(html, class_name="author h-text-size--14")
     contents = extract_by_class_or_id(html, class_name="OLD__post-content h-padding-vert-xl")
     titles_and_dates = extract_by_class_or_id(html, class_name="b-media__body") # same div
@@ -29,32 +23,40 @@ def extract_posts_bulletin(html):
     
 
 def extract_posts_phpp(html):
-    authors_and_publish_datetimes_container = extract_by_class_or_id(html, tag='p',class_name="author") # date and username container
+    """
+    this function will parse https://www.phpbb.com posts.
+    """
+    authors_and_publish_datetimes = extract_by_class_or_id(html, tag='p',class_name="author") # date and username container
     contents = extract_by_class_or_id(html,class_name="content")
-    title_containers = extract_by_class_or_id(html,class_name="postbody") # title container
+    raw_titles = extract_by_class_or_id(html,class_name="postbody") # raw_title is the container title need extraction 
 
     authors,publish_datetimes = [],[]
-    for aad in authors_and_publish_datetimes_container: # extract datetimes and authors from the same container
+    for aad in authors_and_publish_datetimes: # extract datetimes and authors from the same container
         publish_datetimes.append(normalize_datetime(aad.split(" » ")[1],PPHP_DATETIME_FORMAT))
         authors.append(re.search(r"by(.*?) » ",aad).group(1).strip())
 
-    titles = [title_container.split("\nQuote")[0] for title_container in title_containers] # extract title from its container.
+    titles = [title_container.split("\nQuote")[0] for title_container in raw_titles] # extract title from its container.
 
     return lists_to_posts(titles,authors,publish_datetimes,contents)
 
 
 
 if __name__ == "__main__":
-    phpbb = 'https://www.phpbb.com/community/viewtopic.php?p=13166053#p13166053'
-    bulletin = 'https://forum.vbulletin.com/forum/vbulletin-3-8/vbulletin-3-8-questions-problems-and-troubleshooting/414325-www-vs-non-www-url-causing-site-not-to-login'
+    phpbb_url = 'https://www.phpbb.com/community/viewtopic.php?p=13166053#p13166053'
+    bulletin_url = 'https://forum.vbulletin.com/forum/vbulletin-3-8/vbulletin-3-8-questions-problems-and-troubleshooting/414325-www-vs-non-www-url-causing-site-not-to-login'
 
-    html_content_bulletin = fetch_page(bulletin)
-    html_content_phpbb = fetch_page(phpbb)
+    # fetch pages html
+    html_content_phpbb = fetch_page(phpbb_url)
+    html_content_bulletin = fetch_page(bulletin_url)
 
-    posts = extract_posts_phpp(html_content_phpbb)
-    write_posts_to_file(posts, 'phpbb.json')
-    print(f"Extracted {len(posts)} posts.")
+    # extract posts
+    phpbb_posts = extract_posts_phpp(html_content_phpbb)
+    bulletin_posts = extract_posts_bulletin(html_content_bulletin)
 
-    posts = extract_posts_bulletin(html_content_bulletin)
-    write_posts_to_file(posts, 'bulletin.json')
-    print(f"Extracted {len(posts)} posts.")
+    # write the jsons
+    write_posts_to_file(phpbb_posts, 'phpbb.json')
+    write_posts_to_file(bulletin_posts, 'bulletin.json')
+
+    # print number of written posts
+    print(f"Extracted {len(phpbb_posts)} posts from {phpbb_url}.")
+    print(f"Extracted {len(bulletin_posts)} posts from {bulletin_url}.")

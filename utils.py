@@ -1,6 +1,8 @@
 import re
 import json
 from datetime import datetime
+from selenium import webdriver
+
 
 PPHP_DATETIME_FORMAT = "%a %b %d, %Y %I:%M %p"
 BUILLETIN_DATETIME_FORMAT = "%a %d %b '%y, %I:%M%p"
@@ -97,6 +99,15 @@ def write_posts_to_file(posts:list, filename):
 def normalize_datetime(time_str,old_format,new_format=STANDARD_DATETIME_FORMAT):
     return datetime.strptime(time_str, old_format).strftime(new_format)
     
+def fetch_page(url):
+    """
+    allow html accessing for sites that blocks requests.
+    """
+    driver = webdriver.Chrome()
+    driver.get(url)
+    html = driver.page_source
+    driver.quit()
+    return html
 
 def lists_to_posts(titles,authors,publish_datetimes,contents):
     assert len(titles)==len(authors)==len(publish_datetimes)==len(contents), "Something went wrong, some data is missing..."
