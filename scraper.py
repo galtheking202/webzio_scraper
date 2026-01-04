@@ -2,13 +2,9 @@ import re
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from utils import * 
-from datetime import datetime
 
 def fetch_page(url):
-    options = Options()
-    options.add_argument("--start-maximized")
-
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome()
     driver.get(url)
     html = driver.page_source
     driver.quit()
