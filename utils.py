@@ -70,7 +70,6 @@ def extract_by_class_or_id(
                 count -= 1
                 idx += close_match.end()
             else:
-                print(idx)
                 idx += 1
 
         # Extract inner HTML
